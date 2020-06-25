@@ -3,7 +3,6 @@
     package="com.aware.androidupdatetemplateapp">
 
     <uses-permission android:name="android.permission.INTERNET"/>
-
     <application
         android:allowBackup="false"
         android:usesCleartextTraffic="true"

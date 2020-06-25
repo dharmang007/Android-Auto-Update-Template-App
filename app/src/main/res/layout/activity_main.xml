@@ -7,25 +7,32 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:text="@string/check_for_updates"
-        android:onClick="checkForUpdates"
-        android:layout_marginBottom="30dp"
-        />
+        <Button
+            android:layout_width="181dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:onClick="checkForUpdates"
+            android:text="@string/check_for_updates" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:id="@+id/text" />
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="275dp"
+            android:layout_height="56dp" />
+
+        <ListView
+            android:id="@+id/version_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
