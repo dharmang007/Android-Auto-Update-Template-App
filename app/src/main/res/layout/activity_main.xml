@@ -24,9 +24,14 @@
             android:text="@string/check_for_updates" />
 
         <TextView
-            android:id="@+id/text"
-            android:layout_width="275dp"
-            android:layout_height="56dp" />
+            android:id="@+id/current_version_view"
+            android:layout_width="341dp"
+            android:layout_height="37dp" />
+
+        <TextView
+            android:id="@+id/latest_version_view"
+            android:layout_width="341dp"
+            android:layout_height="37dp" />
 
         <ListView
             android:id="@+id/version_list"

@@ -55,7 +55,7 @@ public class VersionListAdapter extends ArrayAdapter<Version> {
 
         TextView version_text = (TextView) convertView.findViewById(R.id.version_label);
         CheckBox version_checkBox = (CheckBox) convertView.findViewById(R.id.version_checkBox);
-        version_text.setText(appName);
+        version_text.setText(number);
         return convertView;
     }
 }
